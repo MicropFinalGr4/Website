@@ -1,0 +1,22 @@
+{
+  "name": "theworstgame",
+  "version": "1.0.0",
+  "description": "Multiplayer party game",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+  },
+  "author": "Francis O'Brien",
+  "license": "ISC",
+  "bugs": {
+  },
+  "dependencies": {
+    "express": "^4.13.3",
+    "ip": "^1.1.0",
+    "socket.io": "^1.3.7"
+  },
+  "devDependencies": {
+  }
+}
