@@ -9,7 +9,7 @@ var ip = require('ip');
 var address = ip.address();
 var port = '8000';
 
-app.use('/front', express.static('front'));
+app.use('/front', express.static(__dirname + '/front'));
 
 app.get('/',function(req,res){
   res.sendFile(path.join(__dirname+ '/front/index.html'));
