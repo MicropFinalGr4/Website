@@ -205,6 +205,8 @@ function createPad(start_x, start_y, width, height, color, speed){
 		setRight : function() {this.mov.x = 1;},
 		setStill : function() {this.mov.x = 0;},
 		update : function(delta){
+            if (this.pos.x <= 0 && this.mov.x < 0) return;  
+            if ((this.pos.x + this.width) >= canvas.width && this.mov.x > 0) return;  
 			var norm_move = this.mov.normalize();
 			norm_move.mult(this.speed * delta);
 			this.pos.add(norm_move);
